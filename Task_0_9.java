@@ -10,7 +10,6 @@ public class Task_0_9 {
     public static void main(String[] args) {
         System.out.print("Vowels: ");
         vowels("Ekard Berry");
-
     }
 
     public static void vowels(String word) {

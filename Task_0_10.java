@@ -11,12 +11,13 @@ public class Task_0_10 {
 
         ArrayList<String> resultList = new ArrayList<>();
 
-        List<String> firstList = List.of(firstWord.split(""));
-        List<String> secondList = List.of(secondWord.split(""));
+        List<String> firstList = List.of(firstWord.toLowerCase().split(""));
+        List<String> secondList = List.of(secondWord.toLowerCase().split(""));
 
         for( String letter: firstList ){
             if(secondList.contains(letter)){
-                resultList.add(letter);
+                if(!resultList.contains(letter))
+                    resultList.add(letter);
             }
         }
 
